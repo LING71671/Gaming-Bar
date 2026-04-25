@@ -41,8 +41,8 @@ flowchart LR
     MySQL[(MySQL)]
     Redis[(Redis)]
 
-    Browser -->|HTTP /api| Backend
-    Browser -->|WS /ws/rooms/{roomId}| WS
+    Browser -->|HTTP API| Backend
+    Browser -->|WebSocket| WS
     WS --> Backend
     Backend --> MySQL
     Backend --> Redis
